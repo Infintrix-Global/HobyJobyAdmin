@@ -50,7 +50,7 @@
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
+    <!-- <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
       #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
@@ -63,12 +63,15 @@
         body, #message { margin-top: 0; background: white; box-shadow: none; }
         body { border-top: 16px solid #ffa100; }
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <!-- code for the master page -->
     <div id="wrapper" class="toggled">
       <div id="sidebar-wrapper">
+        <div class="logo">
+          <img src="logoimage.png" class="logoimg" alt="">
+        </div>
           <ul class="sidebar-nav">
               <li>
                 <button style="text-align: left; background-color:transparent;border: none; color: white;"  onclick="openMaster(event, 'certification')" id="defaultOpen">Certification</button>
@@ -99,10 +102,10 @@
         <a href="#menu-toggle" style="background-color: black;" class="tgl-btn" id="menu-toggle"><i style="color: white; border-top-left-radius:0px" class="fa fa-bars"></i></a>
         <div id="page-content-wrapper">
           <div class="m-1">
-                <button style="float: right;" type="button" class="btn btn-primary add-new mx-3" onclick="myFunction()"><i class="fa fa-plus"></i> Add New</button>
+                <button type="button" class="btn add-btn" onclick="myFunction()"><i class="fa fa-plus"></i> Add New</button>
               </div>
               <div class="container-fluid">
-              <table id="myTable" class="table table-bordered mt-4" style="column-width: 1px;">
+              <table id="myTable" class="table table-bordered">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -127,7 +130,7 @@
     <a href="#menu-toggle1" style="background-color: black;" class="tgl-btn" id="menu-toggle1"><i style="color: white; border-top-left-radius:0px" class="fa fa-bars"></i></a>
     <div id="page-content-wrapper">
       <div class="m-1">
-        <button style="float: right;" type="button" class="btn btn-primary add-new mx-3" onclick="myFunctionQual()"><i class="fa fa-plus"></i> Add New</button>
+        <button style="float: right;" type="button" class="btn add-btn" onclick="myFunctionQual()"><i class="fa fa-plus"></i> Add New</button>
       </div>
       <div class="container-fluid">
         <table id="myTableQual" class="table table-bordered" style="column-width: 1px;">
@@ -159,7 +162,7 @@
     <a href="#menu-toggle2" style="background-color: black;" class="tgl-btn" id="menu-toggle2"><i style="color: white; border-top-left-radius:0px" class="fa fa-bars"></i></a>
           <div id="page-content-wrapper">
             <div class="m-0">
-              <button style="float: right;" type="button" class="btn btn-primary add-new mx-3" onclick="myFunctionSkil()"><i class="fa fa-plus"></i> Add New</button>
+              <button style="float: right;" type="button" class="btn add-btn " onclick="myFunctionSkil()"><i class="fa fa-plus"></i> Add New</button>
             </div>
         <table id="myTableSkill" class="table table-bordered" style="column-width: 1px;">
         <thead>
@@ -186,7 +189,7 @@
     <a href="#menu-toggle3" style="background-color: black;" class="tgl-btn" id="menu-toggle3"><i style="color: white; border-top-left-radius:0px" class="fa fa-bars"></i></a>
       <div id="page-content-wrapper">
         <div class="m-1">
-          <button style="float: right;" type="button" class="btn btn-primary add-new mx-3" onclick="myFunctionJobTyp()"><i class="fa fa-plus"></i> Add New</button>
+          <button style="float: right;" type="button" class="btn add-btn" onclick="myFunctionJobTyp()"><i class="fa fa-plus"></i> Add New</button>
         </div>
       <table id="myTableJobType" class="table table-bordered" style="column-width: 1px;">
       <thead>
@@ -207,7 +210,7 @@
     <a href="#menu-toggle4" style="background-color: black;" class="tgl-btn" id="menu-toggle4"><i style="color: white; border-top-left-radius:0px" class="fa fa-bars"></i></a>
       <div id="page-content-wrapper">
         <div class="m-1">
-          <button style="float: right;" type="button" class="btn btn-primary add-new mx-3" onclick="myFunctionFunctAre()"><i class="fa fa-plus"></i> Add New</button>
+          <button style="float: right;" type="button" class="btn add-btn" onclick="myFunctionFunctAre()"><i class="fa fa-plus"></i> Add New</button>
         </div>
       <table id="myTableFunc" class="table table-bordered" style="column-width: 1px;">
       <thead>
@@ -234,7 +237,7 @@
     <a href="#menu-toggle5" style="background-color: black;" class="tgl-btn" id="menu-toggle5"><i style="color: white; border-top-left-radius:0px" class="fa fa-bars"></i></a>
       <div id="page-content-wrapper">
         <div class="m-1">
-          <button style="float: right;" type="button" class="btn btn-primary add-new mx-3" onclick="myFunctionCiti()"><i class="fa fa-plus"></i> Add New</button>
+          <button style="float: right;" type="button" class="btn add-btn" onclick="myFunctionCiti()"><i class="fa fa-plus"></i> Add New</button>
         </div>
       <table id="myTableCiti" class="table table-bordered" style="column-width: 1px;">
       <thead>
@@ -259,7 +262,7 @@
     <a href="#menu-toggle5" style="background-color: black;" class="tgl-btn" id="menu-toggle5"><i style="color: white; border-top-left-radius:0px" class="fa fa-bars"></i></a>
       <div id="page-content-wrapper">
         <div class="m-1">
-          <button style="float: right;" type="button" class="btn btn-primary add-new mx-3" onclick="myFunctionSpecia()"><i class="fa fa-plus"></i> Add New</button>
+          <button style="float: right;" type="button" class="btn add-btn" onclick="myFunctionSpecia()"><i class="fa fa-plus"></i> Add New</button>
         </div>
       <table id="myTableSpeci" class="table table-bordered" style="column-width: 1px;">
       <thead>
@@ -405,11 +408,11 @@
                     UpdatedAt :  dateTime,
                     UpdatedBy : "1",
                     id : ao,
-                  });
-                  setTimeout("location.reload(true);",2000);
-  
-  
-  
+                  }).catch((error)=>{
+                     console.log(error);
+                  });  
+                  console.log(ao.toString());
+                  // setTimeout("location.reload(true);",3000);
         } 
      });
    };        
@@ -503,7 +506,7 @@
                     UpdatedBy : "1",
                     id : ao,
                   });
-                  setTimeout("location.reload(true);",2000);
+                  setTimeout("location.reload(true);",3000);
         } 
      });
    };  
@@ -576,7 +579,7 @@
                     UpdatedBy : "1",
                     id : ao,
                   });
-                  setTimeout("location.reload(true);",2000);
+                  setTimeout("location.reload(true);",3000);
         } 
      });
    };        
@@ -668,7 +671,7 @@
                     SCId : ao,
                     SubCategory: cell3.innerHTML
                   });
-                  setTimeout("location.reload(true);",2000);
+                  setTimeout("location.reload(true);",3000);
         } 
      });
    };  
@@ -758,7 +761,7 @@
                     State:cell3.innerHTML,
                     id : ao,
                   });
-                  setTimeout("location.reload(true);",2000);
+                  setTimeout("location.reload(true);",3000);
         } 
      });
    };  
@@ -849,27 +852,105 @@
                     SCId : ao,
                     SubCategory: cell3.innerHTML
                   });
-                  setTimeout("location.reload(true);",2000);
+                  setTimeout("location.reload(true);",3000);
         } 
      });
    };  
   }
+
+
+
+  //specialization
+window.myFunctionSpecia = function(){
+  var table = document.getElementById("myTableSpeci");
+          var a=table.rows.length;
+          var b=table.rows.length
+          console.log(a);
+            var row = table.insertRow(b);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            cell1.innerHTML = a;
+            cell2.contentEditable = true;
+            cell3.contentEditable = true;
+  
+            let btn = document.createElement("button");
+            btn.setAttribute("class", "nrbsw");
+            btn.innerHTML = '<i class="fa fa-plus">';
+            cell5.appendChild(btn);
+          
+  
+  
+          const targetDiv = document.getElementsByClassName("nrbsw");
+          var btn5 = document.getElementsByClassName("nrbsw")
+          btn.onclick = function () {
+              Array.prototype.forEach.call(targetDiv, function(element) {
+                if (element.style.display !== "none") {
+                  cell2.contentEditable = false;
+                  cell3.contentEditable = false;
+  
+  
+                  let btnc=document.createElement("button");
+                  btnc.setAttribute("id", "delc");
+                  btnc.setAttribute("class", "dg");
+                  btnc.innerHTML = '<i class="fa fa-trash-o"></i>';
+                  cell4.appendChild(btnc);
+  
+  
+                  let btn2c = document.createElement("button");
+                  btn2c.setAttribute("id", "editc");
+                  btn2c.setAttribute("class", "bgr");
+                  btn2c.innerHTML = '<i class="fas fa-edit"></i>';
+                  cell4.appendChild(btn2c);
+  
+                  let btn3c = document.createElement("button");
+                  btn3c.setAttribute("id", "Savec");
+                  btn3c.setAttribute("class", "bgds");
+                  btn3c.innerHTML = '<i class="fa fa-save"></i>';
+                  cell4.appendChild(btn3c);
+  
+                   $(document).ready(function() {
+                    $("#delc").css("background-color", "red");
+                    $("#delc").css("color", "white");
+                    $("#delc").css("border-color", "white");
+  
+                    $(".dg").css("background-color", "red");
+                    $(".dg").css("color", "white");
+                    $(".dg").css("border-color", "white");
+                  });
+                  $(document).ready(function() {
+                    $("#editc").css("background-color", "red");
+                    $("#editc").css("color", "white");
+                    $("#editc").css("border-color", "white");
+  
+                    $(".bgr").css("background-color", "red");
+                    $(".bgr").css("color", "white");
+                    $(".bgr").css("border-color", "white");
+                  });
+                  $(document).ready(function() {
+                    $("#Savec").css("background-color", "red");
+                    $("#Savec").css("color", "white");
+                    $("#Savec").css("border-color", "white");
+  
+                    $(".bgds").css("background-color", "red");
+                    $(".bgds").css("color", "white");
+                    $(".bgds").css("border-color", "white");
+                });
+  
+                  var ao = a.toString();
+                  setDoc(doc(db, "JobConfig", "Master", "FunctionalArea", ao), {
+                    Id: ao.toString(),
+                    Category:cell1.innerHTML,
+                    SubCategory: cell3.innerHTML
+                  });
+                  setTimeout("location.reload(true);",3000);
+        } 
+     });
+   };  
+}
   
   
   </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>

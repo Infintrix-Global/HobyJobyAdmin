@@ -112,7 +112,7 @@ var tbody= document.getElementById("tbody1");
         var result = confirm("Are you sure you want to Delete Crtificate with Id " + num);
         if (result) {
         deleteDoc(doc(db, "JobConfig", "Master","Certifications",num));
-        setTimeout("location.reload(true);",2000);
+        // setTimeout("location.reload(true);",3000);
         }
       };
 
@@ -131,7 +131,7 @@ var tbody= document.getElementById("tbody1");
           UpdatedBy : "1",
           id : id.toString(),
         });
-        setTimeout("location.reload(true);",2000);
+        // setTimeout("location.reload(true);",3000);
       }; 
     }
 
@@ -248,7 +248,7 @@ var tbody= document.getElementById("tbody2");
         var result = confirm("Are you sure you want to Delete Qualification with Id " + num);
         if (result) {
         deleteDoc(doc(db, "JobConfig", "Master","Qualifiactions",num));
-        setTimeout("location.reload(true);",2000);
+        setTimeout("location.reload(true);",3000);
         }
       };
 
@@ -268,7 +268,7 @@ var tbody= document.getElementById("tbody2");
           UpdatedBy : "1",
           id : id.toString(),
         });
-        setTimeout("location.reload(true);",2000);
+        setTimeout("location.reload(true);",3000);
       }; 
 
 
@@ -392,7 +392,7 @@ var tbody= document.getElementById("tbody3");
         var result = confirm("Are you sure you want to Delete Skill with Id " + num);
         if (result) {
         deleteDoc(doc(db, "JobConfig", "Master","Skills",num));
-        setTimeout("location.reload(true);",2000);
+        setTimeout("location.reload(true);",3000);
         }
       };
 
@@ -412,7 +412,7 @@ var tbody= document.getElementById("tbody3");
           UpdatedBy : "1",
           id : id.toString(),
         });
-        setTimeout("location.reload(true);",2000);
+        setTimeout("location.reload(true);",3000);
       }; 
     }
 
@@ -519,7 +519,7 @@ var tbody= document.getElementById("tbody4");
           var result = confirm("Are you sure you want to Delete Functional Area with Id " + num);
           if (result) {
           deleteDoc(doc(db, "JobConfig", "Master","FunctionalArea",num));
-          setTimeout("location.reload(true);",2000);
+          setTimeout("location.reload(true);",3000);
           }
         };
   
@@ -540,7 +540,7 @@ var tbody= document.getElementById("tbody4");
             SCId : iut.toString(),
             SubCategory: td3.innerHTML
           });
-          setTimeout("location.reload(true);",2000);
+          setTimeout("location.reload(true);",3000);
         }; 
         tbody.appendChild(trow);
     }
@@ -643,7 +643,7 @@ var tbody= document.getElementById("tbody5");
           var result = confirm("Are you sure you want to Delete City with Id " + num);
           if (result) {
           deleteDoc(doc(db, "JobConfig", "Master","Cities",num));
-          setTimeout("location.reload(true);",2000);
+          setTimeout("location.reload(true);",3000);
           }
         };
   
@@ -661,7 +661,7 @@ var tbody= document.getElementById("tbody5");
             State:td3.innerHTML,
             id : cat.toString(),
           });
-          setTimeout("location.reload(true);",2000);
+          setTimeout("location.reload(true);",3000);
         }; 
         tbody.appendChild(trow);
 
@@ -767,7 +767,7 @@ var tbody= document.getElementById("tbody6");
           var result = confirm("Are you sure you want to Delete JobType with Id " + num);
           if (result) {
           deleteDoc(doc(db, "JobConfig", "Master","JobTypes",num));
-          setTimeout("location.reload(true);",2000);
+          setTimeout("location.reload(true);",3000);
           }
         };
   
@@ -782,7 +782,7 @@ var tbody= document.getElementById("tbody6");
             name: td2.innerHTML,
             id : cat.toString(),
           });
-          setTimeout("location.reload(true);",2000);
+          setTimeout("location.reload(true);",3000);
         }; 
         tbody.appendChild(trow);
 
@@ -888,7 +888,7 @@ var tbody= document.getElementById("tbody7");
           var result = confirm("Are you sure you want to Delete Specialization with Id " + num);
           if (result) {
           deleteDoc(doc(db, "JobConfig", "Master","Specialization",num));
-          setTimeout("location.reload(true);",2000);
+          setTimeout("location.reload(true);",3000);
           }
         };
   
@@ -904,7 +904,7 @@ var tbody= document.getElementById("tbody7");
             Id: cat.toString(),
             SubCategory: td3.innerHTML
           });
-          setTimeout("location.reload(true);",2000);
+          setTimeout("location.reload(true);",3000);
         }; 
 
 
